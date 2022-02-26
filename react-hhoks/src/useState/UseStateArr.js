@@ -11,6 +11,7 @@ const UseStateArr = () => {
         value: Math.floor(Math.random() * 10) + 1,
       },
     ]);
+    
   };
   return (
     <div>
