@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 import "./App.css";
+import ParentComponent from "./useCallback/ParentComponent";
 import ComponentC from "./useContext/ComponentC";
 import ClassCounterOne from "./useEffect/ClassCounterOne";
 import CLassMouse from "./useEffect/CLassMouse";
@@ -9,6 +10,7 @@ import HookCounterOne from "./useEffect/HoolCounterOne";
 import IntervalClassCounter from "./useEffect/IntervalClassCounter";
 import IntervalHookCounter from "./useEffect/IntervalHookCounter";
 import MouseContainer from "./useEffect/MouseContainer";
+import Counter from "./useMemo/Counter";
 import CounterOne from "./useReducer/CounterOne";
 import CounterThree from "./useReducer/CounterThree";
 import CounterTwo from "./useReducer/CounterTwo";
@@ -17,10 +19,18 @@ import DataFetchingTwo from "./useReducer/DataFetching/DataFetchingTwo";
 import ComponentA from "./useReducer/useReducerWithuseContext/ComponentA";
 import ComponentB from "./useReducer/useReducerWithuseContext/ComponentB";
 import UseReducerComponentC from "./useReducer/useReducerWithuseContext/ComponentC";
+import FocusInput from "./useRef/FocusInput";
 import ClassCounter from "./useState/ClassCounter";
 import HookCounter from "./useState/HookCounter";
 import UseStateArr from "./useState/UseStateArr";
 import UseStateObj from "./useState/UseStateObj";
+import ClassTimer from "./useRef/ClassTimer";
+import HookTimer from "./useRef/HookTimer";
+import DocTitleOne from "./customHook/useDocumentTitle/DOcTitleOne";
+import DocTitleTwo from "./customHook/useDocumentTitle/DocTitleTwo";
+import CounterOneHook from "./customHook/useCounter/CounterOne";
+import CounterTwoHook from "./customHook/useCounter/CounterTwo";
+
 export const UserContext = React.createContext();
 export const BrandContext = React.createContext();
 
@@ -94,7 +104,29 @@ function App() {
       {/* ------------------- useReducer with useEffect---------------------------- */}
 
       {/* <DataFetchingOne /> */}
-      <DataFetchingTwo />
+      {/* <DataFetchingTwo /> */}
+
+      {/* ------------------- useCallBack---------------------------- */}
+      {/* <ParentComponent /> */}
+
+      {/* ----------------------- useMemo ----------------------------------- */}
+
+      {/* <Counter /> */}
+
+      {/* --------------------- useRef -------------------------- */}
+
+      {/* <FocusInput />
+      <ClassTimer />
+      <HookTimer /> */}
+
+      {/* -------------------------- Custom Hooks -------------------------------- */}
+      {/* ------------------- useDocumentTitle ---------------------- */}
+      {/* <DocTitleOne />
+      <DocTitleTwo /> */}
+
+      {/* ------------------- useCounter ---------------------- */}
+      <CounterOneHook />
+      <CounterTwoHook />
     </div>
   );
 }
